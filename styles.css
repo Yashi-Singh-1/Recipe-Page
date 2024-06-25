@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif', serif;
+    background-color: #F3E5D8;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.frame {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 0 0 30px 0;
+    margin-bottom: 30px; 
+    margin-top: 30px;
+}
+
+.images {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.images img {
+    max-width: 85%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-header {
+    text-align: left;
+    margin: -28px 8%;
+}
+
+.recipe-header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2f2e2c;
+}
+
+.recipe-header p {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.preparation-time {
+    margin: 50px 8%;
+    background-color: #FFF7FC;
+    border-radius: 5%;
+    padding: 2px 0 2px 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.preparation-time .pre-time {
+    color: #742E4A;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.preparation-time-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.preparation-time-list li {
+    position: relative;
+    line-height: 2em;
+}
+
+.preparation-time-list li::before {
+    content: '•';
+    color: #742E4A;
+    display: inline-block;
+    width: 0.5em;
+    font-size: 3em;
+    margin-right: 0.2em;
+    text-align: center;
+    margin-bottom: -8px;
+    vertical-align: middle;
+}
+
+/* Styling for the Ingredients section */
+.ingredients {
+    margin: 50px 8%;
+}
+
+.ingredients .ingredient {
+    font-size: 1.5em;
+    color: #814239;
+    margin-top: -30px;
+}
+
+.ingredients-list {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.ingredients-list li {
+    position: relative;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+    font-size: 1.1em;
+}
+
+.ingredients-list li::before {
+    content: "•";
+    color: rgb(129, 66, 57);
+    font-size: 2.5em;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+}
+
+
+hr {
+    width: 86%;
+    border: 1px solid #E7E7E7;
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.second-hr {
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+.instructions {
+    margin: 20px 8%;
+}
+
+.instruction {
+    font-size: 1.6em;
+    color: #814239;
+    margin-top: -20px;
+}
+
+.instruction-steps {
+    counter-reset: step-counter;
+    padding-left: 25px;
+    list-style-type: none;
+}
+
+/* Styling for each instruction step */
+.instruction-steps li {
+    position: relative;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Styling for the number before each instruction step */
+.instruction-steps li::before {
+    content: counter(step-counter) '.';
+    counter-increment: step-counter;
+    color: #814239;
+    font-weight: bold;
+    display: inline-block;
+    width: 2em;
+    margin-left: -2em;
+}
+
+/* Styling for the Nutrition values section */
+.nutrition-values {
+    margin: 20px 8%;
+}
+
+.nutrition-label {
+    color: #814239;
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.nutrition-details {
+    margin-top: 10px;
+}
+
+.nutrition-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between each nutrition item */
+}
+
+.nutrition-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E9E9E9;
+}
+
+.nutrition-item .description {
+    margin: 0;
+    font-size: 1em;
+}
+
+.nutrition-item span {
+    font-weight: bold;
+    color: #814239;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .frame {
+        margin: 0;
+    }
+
+    .recipe-header {
+        margin: 20px 8%;
+    }
+
+    .ingredients .ingredient {
+        margin: 5px auto;
+    }
+
+    hr {
+        margin: 40px;
+    }
+
+    .preparation-time, .ingredients, .instructions, .nutrition-values {
+        margin: 20px 8%;
+    }
+
+    .images {
+        margin: 30px auto;
+    }
+}
