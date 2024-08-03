@@ -1,68 +1,110 @@
-<h1>Recipe Page</h1>
+# Frontend Mentor - Recipe Page Solution
 
-<h2 id="#challenge-description">Challenge Description</h2>
-<p> This challenge is to build out the recipe page. <br> This challenge is not only to build out the recipe page but also focuses on writing semantic HTML.
-    <br>Ensuring that through what HTML elements are most appropriate for each piece of content. </p>
+This is a solution to the [Recipe Page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-<h2>Table of Content</h2>
+## Table of contents
 
-<ol>
-    <li><a href="challenge-description">Challenge Description</a></li>
-    <li><a href="purpose">Purpose</a></li>
-    <li><a href="features">Features</a></li>
-    <li><a href="installation">Installation</a></li>
-    <li><a href="preview">Preview</a></li>
-    <li><a href="contributing">Contributing</a></li>
-    <li><a href="credits">Credits</a></li>
-    <li><a href="author">Author</a></li>
-</ol>
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-<h2 id="#purpose">Purpose</h2>
-<p> The purpose of this challenge is to practice building a recipe page with a focus on writing clean, semantic HTML. This project aims to help improve your HTML and CSS skills and ensure that you are using the most appropriate HTML elements for each piece of content. </p>
+## Overview
 
-<h2 id="#features">Features</h2>
-<p>This recipe page includes the following features:
-    <pre>
-    - Responsive design for both desktop and mobile views
-    - A clear layout with sections for ingredients and instructions.
-    </pre>
-</p>
+### The challenge
 
-<h2 id="#installation">Installation</h2>
-<p>To install and run this project locally, follow these steps:
-    <pre>
-    1. Clone the repository: <code> git clone https://github.com/Yashi-Singh-1/Recipe-Page.git </code>
-    2. Navigate to the project directory: <code> cd recipe-page </code>
-    3. Open <code> index.html </code> in your preferred web browser
-    </pre>
-</p>
+Users should be able to:
 
-<h2 id="#preview">Preview</h2>
+- View the recipe page with a clean and responsive design
+- See the preparation time, ingredients, instructions, and nutritional values clearly
+- View an image of the dish
 
-<p>The Desktop Preview</p>
+### Screenshot
 
-![Desktop-Preview](Desktop-Preview.png)
+![Desktop Preview](images/Desktop-Preview.png)
 
-<p>The Mobile Preview</p>
+![Mobile Preview](images/Mobile-Preview.png)
 
-![Mobile-Preview](Mobile-Preview.png)
+### Links
 
-<p>You can live preview the challenge on my CodePen: <a href="https://codepen.io/Yashi-the-lessful/pen/pomKWLv">https://codepen.io/Yashi-the-lessful/pen/pomKWLv</a></p>
+- Live Site URL: [Live Site ](https://recipe-page-frontendmentor-solution.netlify.app/)
 
-<h2 id="#contributing">Contributing</h2>
-<p>If you would like to contribute to this project, please follow these guidelines:
-    <pre>
-    1. Fork the repository
-    2. Create a new branch (<code> git checkout -b feature-branch </code>)
-    3. Make your changes
-    4. Commit your changes (<code> git commit -m 'Add some feature' </code>)
-    5. Push to the branch (<code> git push origin feature-branch </code>)
-    6. Open a pull request
-    </pre>
-</p>
+## My process
 
-<h2 id="#credits">Credits</h2>
-<p>This challenge credits go to <a href="https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm">Frontend Mentor</a> for their idea.</p>
+### Built with
 
-<h2 id="#author">Author</h2>
-<p>This challnege completed by Yashi Singh on 25-06-2024. </p>
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+
+### What I learned
+
+Working on this project helped me reinforce my understanding of:
+
+- **CSS Custom Properties**: Using variables for consistent styling across the project.
+- **Flexbox**: Aligning and distributing space among items in a container.
+- **Responsive Design**: Ensuring the layout adapts well to different screen sizes using media queries.
+
+Code snippets I’m proud of:
+
+```html
+<figure>
+    <img src="images/image-omelette.jpeg" alt="A plate of served omelette with a golden-brown crust" role="img" aria-label="Served omelette">
+</figure>
+```
+
+```css
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif', serif; 
+    background-color: var(--stone-100);
+    line-height: 1.6;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;
+}
+```
+
+```css
+.instructions-steps li::before {
+    content: counter(list-counter) ". ";
+    color: hsl(14, 45%, 36%);
+    position: absolute;
+    left: -30px;
+    top: 0;
+    font-weight: 700;
+}
+```
+
+### Continued development
+
+In future projects, I aim to:
+
+- **Explore CSS Grid**: For more complex layouts and design patterns.
+- **Improve Accessibility**: By testing and enhancing the accessibility features of the website.
+- **Experiment with JavaScript**: To add interactive elements and dynamic content.
+
+### Useful resources
+
+- [CSS Tricks Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This guide was essential in understanding Flexbox.
+- [MDN Web Docs on Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries) - Helpful for implementing responsive design.
+
+## Author
+
+- Frontend Mentor - [@Yashi-Singh](https://www.frontendmentor.io/profile/Yashi-Singh-1)
+- LinkedIn - [@Yashi Singh](www.linkedin.com/in/yashi-singh-b4143a246)
+
+## Acknowledgments
+
+A special thank you to Frontend Mentor for providing this challenge. It was an excellent opportunity to enhance my skills and practice real-world web design techniques. Also, thanks to the Frontend Mentor community for their feedback and support throughout the development of this project. Lastly, a shout-out to [MDN Web Docs](https://developer.mozilla.org) for their comprehensive documentation and tutorials.
